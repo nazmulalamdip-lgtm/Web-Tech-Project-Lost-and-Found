@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Boy Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>Delivery Boy Dashboard</h2>
+        <div class="profile">
+            <span>🚚 Delivery Partner</span>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <aside class="sidebar">
+            <h3>Menu</h3>
+            <button onclick="showSection('available')">
+                Available Requests
+            </button>
+
+            <button onclick="showSection('active')">
+                My Deliveries
+            </button>
+
+            <button onclick="showSection('completed')">
+                Completed Deliveries
+            </button>
+        </aside>
+
+        <main class="content">
+
+            <!-- Available Requests -->
+            <section id="available">
+                <h2>Available Delivery Requests</h2>
+                <div id="requestList"></div>
+            </section>
+
+            <!-- Active Deliveries -->
+            <section id="active" class="hidden">
+                <h2>My Active Deliveries</h2>
+                <div id="activeList"></div>
+            </section>
+
+            <!-- Completed Deliveries -->
+            <section id="completed" class="hidden">
+                <h2>Completed Deliveries</h2>
+                <div id="completedList"></div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
